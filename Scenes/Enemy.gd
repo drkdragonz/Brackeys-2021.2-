@@ -4,10 +4,10 @@ const bullet_scene = preload("res://Scenes/Bullet.tscn")
 onready var shoot_timer = $ShootTimer
 onready var rotater = $Rotater
 
-const rotate_speed = 80
-const shoot_timer_wait_time = 0.5
-const spawn_point_count = 4
-const radius = 25
+export var rotate_speed = 80
+export var shoot_timer_wait_time = 0.5
+export var spawn_point_count = 5 
+export var radius = 25
 
 func _ready():	
 	var step = 2 * PI / spawn_point_count
